@@ -1,47 +1,175 @@
-body{
-	background-color: #ee3f54;
-	
-}
-h1, h2, h3, h4,h5,h6,button{
-	font-family: 'bree serif', serif;
+body {
+  background-color: #EE3F54;
 }
 
-#social-container{
-	background-color: #1c3643;
+h1, h2, h3, h4, h5, h6, button {
+  font-family: 'Bree Serif', serif;
 }
 
-#logo-container .callout{
-	background-color: #ee3f54;
-	color: white;
-	margin-bottom: 0
+#social-container {
+  background: #1c3643;
 }
+
+#logo-container .callout {
+  margin-bottom: 0;
+  background: #F1C40F;
+  color: white;
+}
+
+.tabs-title {
+  display: inline-block;
+  float: none;
+}
+
+#lineup-container .orbit-container {
+  margin-bottom: 1em;
+}
+
+#lineup-container .column:nth-child(odd) figcaption {
+  text-align: right;
+}
+
+/* Pricing table */
+
+.pricing-table {
+  border: solid 1px #DDDDDD; }
+  .pricing-table li {
+    border-bottom: dotted 1px #DDDDDD;
+    font-size: 0.75rem;
+    padding: 0.875rem 1.125rem; }
+    .pricing-table li:last-child {
+      border-bottom: 0; }
+  .pricing-table .title {
+    background-color: #333333;
+    color: #EEEEEE;
+    font-size: 0.875rem;
+    border-bottom: 0; }
+  .pricing-table .price {
+    background-color: #F6F6F6;
+    color: #333333;
+    font-size: 1.75rem;
+    border-bottom: 0; }
+  .pricing-table .description {
+    color: #777777;
+    font-size: 0.625rem; }
+  .pricing-table .button {
+    margin: 0; }
+
+.info-map iframe {
+  width: 100%;
+}
+
+.data-sticky {
+  width: 100%;
+  z-index: 100;
+}
+
 #menu-container {
-	background-color: #48a19d;
-}
-#menu-container li a {
-	color:white;
-	font-family: 'bree serif', serif;
+  background-color: #2980B9;
+  text-transform: uppercase;
+  font-family: 'Bree Serif', serif;
 }
 
-#menu-container li a:hover,
-#submenu-container li a:hover {
-	color: #f6e15f;
+#menu-container li a {
+  color: white;
 }
-#submenu-container{
-	border:0;
+
+#menu-container li a:hover {
+  color: #f6e15f;
+}
+
+#submenu-container {
+  border: 0;
 }
 
 #submenu-container li a {
-	background-color: #48a19d;
-	color:white;
+  color: white;
+  background-color: #48a19d;
 }
-#Tickets-action .callout {
-	background-color: #5e7eb7;
-	color: white; 
+
+#tickets-action .callout {
+  background-color: #E74C3C;
+  margin-bottom: 0;
 }
-#Tickets-action .callout button {
-	border: 1px solid white;
-	color: white; 
+
+#tickets-action .callout button {
+  border: 1px solid white;
+  color: white;
+}
+
+#lineup-container,
+#lineup-container .tabs-panel,
+#lineup-container .tabs,
+#lineup-container .tabs-title,
+#lineup-container .tabs-title.is-active a {
+  background-color: #5DADE2;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  font-family: 'Bree Serif', serif;
+}
+
+#lineup-container .tabs-title a {
+  font-size: 18px;
+  color: #17202A;
+}
+
+#lineup-container .tabs-title  a:hover {
+  color: white;
+  background-color: #9676af;
+}
+
+#suscribete-container {
+  background: #ee3f54;
+  padding: 30px 0;
+  color: white;
+}
+
+#suscribete-container h2 small {
+  color: #ffcddc;
+}
+
+#info-container {
+  background-color: #161742;
+  color: white;
+  padding-top: 20px;
+}
+
+#tickets-container {
+  background-color: #f6e15f;
+  color: #161742;
+}
+
+.pricing-table {
+  border: 1px solid #161742;
+  font-family: 'Ravi Prakash';
+}
+
+.pricing-table li {
+  font-size: 20px !important;
+}
+
+.pricing-table li.price {
+  font-size: 30px !important;
+}
+
+.pricing-table a.button {
+  font-family: 'Bree Serif', serif;
+}
+
+#offCanvas,
+#offCanvas li a,
+.off-canvas-wrapper {
+  background-color: black;
+  color: white;
+  font-family: 'Bree Serif', serif;
+}
+
+#offCanvas li a:before {
+  border-color: transparent white transparent transparent;
 }
 
 
+#offCanvas li a:after {
+  border-color: transparent transparent transparent white;
+}
