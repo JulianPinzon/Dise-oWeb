@@ -4,394 +4,140 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lolapalotza</title>
-    <link rel="stylesheet" href="icon/foundation-icons.css">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-   <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-  </head>
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lolapalotza</title>
-    <link rel="stylesheet" href="icons/foundation-icons.css" />
+    <title>Mini CNC</title>
     <link rel="stylesheet" href="css/foundation-flex.css">
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Ravi+Prakash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
 
-    <!--  Off Canvas Menu  -->
-      <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper >
-          <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+<!-- titulo -->
 
-            <!-- Close button -->
-            <button class="close-button" aria-label="Close menu" type="button" data-close>
-              <span aria-hidden="true">&times;</span>
-            </button>
+  <section id="logo-container">
+    <div class="callout text-center">
+        <h1> Proyecto IOT: Mini Impresora CNC </h1>
+    </div>
+  </section>
 
-            <!-- Menu -->
-            <nav data-magellan>
-              <ul class="vertical menu" data-drilldown>
-                <li>
-                  <a href="#tickets-container">Tickets</a>
-                </li>
-                <li>
-                  <a href="#">Lineup</a>
-                  <ul class="vertical menu">
-                    <li><a href="#viernes" data-toggle-dia="panelViernes">Viernes</a></li>
-                    <li><a href="#sabado" data-toggle-dia="panelSabado">Sábado</a></li>
-                    <li><a href="#domingo" data-toggle-dia="panelDomingo">Domingo</a></li>
-                  </ul>
-                </li>
-                <li><a href="#info-container">Info</a></li>
-                <li><a href="#suscribete-container">Suscríbete</a></li>
-              </ul>
-            </nav>
+<!-- Menu -->
 
-          </div>
+  <section id="menu-container">
+    <ul class="menu dropdown align-spaced" data-dropdown-menu>
+      <li class="menu-text">Contenido</a></li>
+      <li>
+        <a href="#lineup-container">Descripción</a>
+      </li>
+      <li><a href="#Materiales">Materiales</a></li>
+      <li><a href="#Alcance">Producto Final</a></li>
+    </menu>
+  </section>
 
-        </div class="off-canvas-content" data-off-canvas-content>
-            <!-- Social -->
+  <!-- lineup-->
 
-            <section id="social-container">
-              <div class="row">
-                <ul class="menu column align-center">
-                  <li><a href="#"><i class="fi-social-facebook"></i></a></li>
-                  <li><a href="#"><i class="fi-social-twitter"></i></a></li>
-                  <li><a href="#"><i class="fi-social-instagram"></i></a></li>
-                </ul>
-              </div>
-            </section>
+  <section id="lineup-container">
+    <h3 class="text-center">Descripción</h3>
+    <ul class="tabs text-center" data-tabs id="lineup-tabs">
+      <li class="tabs-title is-active ">
+        <a href="#panel1">¿Que es?</a>
+      </li>
+      <li class="tabs-title ">
+        <a href="#panel2">¿Como funciona?</a>
+      </li>
+      <li class="tabs-title">
+        <a href="#panel3">Aplicaciones</a>
+      </li>
+    </ul>
 
-            <!-- Logo -->
-
-            <section id="logo-container">
-              <div class="callout text-center">
-                <h1 class="logo">Lolapalotza</h1>
-              </div>
-            </section>
-
-            <!-- Main menu -->
-            <section data-sticky-container>
-              <div id="sticky" class="data-sticky" data-sticky data-options="marginTop:0;" data-top-anchor="150" data-sticky-on="small">
-                <nav id="menu-container" class="title-bar" data-magellan data-bar-offset="29">
-                  <ul class="menu align-spaced show-for-small-only">
-                    <li>
-                      <a href="#" data-toggle="offCanvas">Menu</a>
-                    </li>
-                  </ul>
-                  <ul class="dropdown menu align-spaced show-for-medium" data-dropdown-menu>
-                    <li>
-                      <a href="#tickets-container">Tickets</a>
-                    </li>
-                    <li>
-                      <a href="#lineup-container">Lineup</a>
-                      <ul id="submenu-container" class="menu">
-                        <li><a href="#viernes" data-toggle-dia="panelViernes">Viernes</a></li>
-                        <li><a href="#sabado" data-toggle-dia="panelSabado">Sábado</a></li>
-                        <li><a href="#domingo" data-toggle-dia="panelDomingo">Domingo</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#info-container">Info</a></li>
-                    <li><a href="#suscribete-container">Suscríbete</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </section>
-
-            <div class="sections">
-
-              <!-- Comprar tickets -->
-
-              <section id="tickets-action">
-                <div class="callout large text-center" data-magellan>
-                  <a href="#tickets-container">
-                    <button class="hollow large button">Comprar boletos</button>
-                  </a>
-                </div>
-              </section>
-
-              <!-- Lineup -->
-
-              <section id="lineup-container" data-magellan-target="lineup-container">
-                <h1 class="text-center">Lineup</h1>
-
-                <!-- Tabs -->
-                <ul class="tabs text-center" data-tabs id="lineup-tabs">
-                  <li class="tabs-title is-active">
-                    <a href="#panelViernes" aria-selected="true" data-magellan-target="viernes" id="viernes">Viernes</a>
-                  </li>
-                  <li class="tabs-title">
-                    <a href="#panelSabado" data-magellan-target="sabado" id="sabado">Sábado</a>
-                  </li>
-                  <li class="tabs-title">
-                    <a href="#panelDomingo" data-magellan-target="domingo" id="domingo">Domingo</a>
-                  </li>
-                </ul>
-
-                <!-- Tabs content -->
-                <div class="tabs-content" data-tabs-content="lineup-tabs">
-                  <div class="tabs-panel is-active" id="panelViernes">
-                    <div class="row">
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Guns n' Roses</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Guns n' Roses</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Guns n' Roses</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Guns n' Roses</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Guns n' Roses</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://i2.mirror.co.uk/incoming/article675034.ece/ALTERNATES/s615/Axl-Rose-and-Slash-of-Guns-N-Roses-perform-live-at-Rock-In-Rio-II-on-January-15-1991.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Guns n' Roses</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="tabs-panel" id="panelSabado">
-                    <div class="row">
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://static.queenonline.com.s3.amazonaws.com/cms_page_media/134755071550336/original_resize_720_360.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Queen</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://static.queenonline.com.s3.amazonaws.com/cms_page_media/134755071550336/original_resize_720_360.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Queen</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://static.queenonline.com.s3.amazonaws.com/cms_page_media/134755071550336/original_resize_720_360.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Queen</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://static.queenonline.com.s3.amazonaws.com/cms_page_media/134755071550336/original_resize_720_360.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Queen</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://static.queenonline.com.s3.amazonaws.com/cms_page_media/134755071550336/original_resize_720_360.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Queen</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="http://static.queenonline.com.s3.amazonaws.com/cms_page_media/134755071550336/original_resize_720_360.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">Queen</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="tabs-panel" id="panelDomingo">
-                    <div class="row">
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Beatles_ad_1965_just_the_beatles_crop.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">The Beatles</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Beatles_ad_1965_just_the_beatles_crop.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">The Beatles</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Beatles_ad_1965_just_the_beatles_crop.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">The Beatles</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Beatles_ad_1965_just_the_beatles_crop.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">The Beatles</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Beatles_ad_1965_just_the_beatles_crop.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">The Beatles</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="small-12 medium-6 column">
-                        <div class="orbit-container">
-                          <div class="orbit-slide">
-                            <img class="orbit-image" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Beatles_ad_1965_just_the_beatles_crop.jpg" alt="Gun n' Roses">
-                            <figcaption class="orbit-caption">The Beatles</figcaption>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </section>
-<!--tickets-->
-              <section id="tickets-container" data-magellan-target="tickets-container">
-                <h1 class="text-center">Comprar boletos</h1>
-                <div class="row" data-equalizer data-equalize-on="small">
-                  <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
-                    <ul class="pricing-table no-bullet text-center">
-                      <li class="title">Platino</li>
-                      <li class="price">$120</li>
-                      <li class="description">Acceso viernes, sábado y domingo</li>
-                      <li>Acceso a todos los escenarios</li>
-                      <li>2 consumiciones de bebida por cada día</li>
-                      <li>Parqueadero incluido todos los días</li>
-                      <li>Participa de un sorteo para ir acceder al backstage</li>
-                      <li><a class="button" href="#">Comprar platino</a></li>
-                    </ul>
-                  </div>
-                  <div class="column small-6 medium-4 medium-offset-2">
-                    <ul class="pricing-table no-bullet text-center">
-                      <li class="title">Gold</li>
-                      <li class="price">$90</li>
-                      <li class="description">Acceso viernes, sábado y domingo</li>
-                      <li>Acceso a todos los escenarios</li>
-                      <li data-equalizer-watch>1 consumición de bebida por cada día</li>
-                      <li>-</li>
-                      <li>-</li>
-                      <li><a class="button" href="#">Comprar gold</a></li>
-                    </ul>
-                  </div>
-                  <div class="column small-6 medium-4">
-                    <ul class="pricing-table no-bullet text-center">
-                      <li class="title">Silver</li>
-                      <li class="price">$65</li>
-                      <li class="description">Acceso viernes, sábado y domingo</li>
-                      <li>Acceso a todos los escenarios</li>
-                      <li data-equalizer-watch>-</li>
-                      <li>-</li>
-                      <li>-</li>
-                      <li><a class="button" href="#">Comprar silver</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-
-              <!-- Suscribete -->
-              <section id="suscribete-container" data-magellan-target="suscribete-container">
-                <h1 class="text-center">Suscríbete</h1>
-                <h2 class="text-center"><small>Y recibe las últimas novedades del concierto</small></h2>
-                <form action="https://formspree.io/platzipalooza@gmail.com" method="POST">
-                  <div class="row columns small-12 medium-6">
-                    <div class="input-group">
-                      <span class="input-group-label"><i class="fi-mail"></i></span>
-                      <input name="email" class="input-group-field" type="email" placeholder="tu@correo.com">
-                      <div class="input-group-button">
-                        <input type="submit" class="button" value="Suscribirse!">
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </section>
-
-              <!-- Info -->
-              <section id="info-container" data-magellan-target="info-container">
-                <h1 class="text-center">Información</h1>
-                <div class="info-map" data-interchange="[assets/maps/map-small.html, small], [assets/maps/map.html, medium]"></div>
-
-             </section>
-
-         </div>
-       </div>
+    <div class="tabs-content" data-tabs-content="lineup-tabs">
+      <div class="tabs-panel is-active text-center" id="panel1">
+        En una máquina CNC, a diferencia de una máquina convencional o manual, una computadora controla la posición y velocidad de los motores que accionan los ejes de la máquina. Gracias a esto, puede hacer movimientos que no se pueden lograr manualmente como círculos, líneas diagonales y figuras complejas tridimensionales.
       </div>
+      <div class="tabs-panel text-center" id="panel2">
+         El sistema se basa en el control de los movimientos de la herramienta de trabajo con relación a los ejes de coordenadas de la máquina, usando un programa informático ejecutado por una computadora. En el caso de un torno, hace falta controlar los movimientos de la herramienta en dos ejes de coordenadas: el eje de las X para los desplazamientos longitudinales del carro y el eje de las Z para los desplazamientos transversales de la torre. En el caso de las fresadoras se controlan también los desplazamientos verticales, que corresponden al eje Y. Para ello se incorporan servomotores en los mecanismos de desplazamiento del carro y la torreta, en el caso de los tornos y en la mesa en el caso de la fresadora; dependiendo de la capacidad de la máquina, esto puede no ser limitado únicamente a tres ejes.
+      </div>
+      <div class="tabs-panel text-center" id="panel3">
+        Las máquinas CNC son capaces de mover la herramienta al mismo tiempo en los tres ejes para ejecutar trayectorias tridimensionales como las que se requieren para el maquinado de complejos moldes y troqueles como se muestra en la imagen.
+        En una máquina CNC una computadora controla el movimiento de la mesa, el carro y el husillo. Una vez programada la máquina, ésta ejecuta todas las operaciones por sí sola, sin necesidad de que el operador esté manejándola. Esto permite aprovechar mejor el tiempo del personal para que sea más productivo.
+      </div>
+    </div>
+  </section>
 
-    <!-- /Off Canvas Menu  -->
+  <!-- Materiales-->
+ <section id="Materiales">
+   <h3 class="text-center">Materiales</h3>
+   <div class="row">
+     <div class="column middle-6 ">
+       <ul>
+
+            <li>
+              <div class="text">
+                Microcontrolador Arduino
+                <img src="http://cdn-tienda.bricogeek.com/1157-thickbox_default/arduino-uno.jpg" alt="Space" title="arduino" width="300" height="200">
+              </div>
+            </li>
+            <li>
+              <div class="text">
+                Tres lectoras/grabadoras CD o DVD
+                <img  src="https://jex5vc2mwhw64rpr-zippykid.netdna-ssl.com/wp-content/uploads/2014/12/tools.jpg" alt="Space" title="arduino" width="300" height="200">
+              </div>
+            </li>
+            <li>
+              <div class="text">
+                Tres capacitores 47uF
+                <img  src="https://http2.mlstatic.com/capacitores-electroliticos-47-uf-470-uf-a-25v-D_NQ_NP_219905-MLM25101804417_102016-F.jpg" alt="Space" title="arduino" width="300" height="200">
+              </div>
+            </li>
+        </ul>
+   </div>
+   <div class=" column middle-6">
+  <ul>
+
+          <li>
+            <div class="text">
+              Base de madera 20x20
+              <img src="http://vidrierasymosaicosartisticos.com/images/Base%20Madera%2018.jpg" alt="Space" title="arduino" width="300" height="200">
+            </div>
+          </li>
+          <li>
+            <div class="text">
+              Tornillos, muelles, cables, conectores
+              <img  src="https://ae01.alicdn.com/kf/HTB14GYyOFXXXXcoaFXXq6xXFXXX4/1450-unids-Kit-de-conector-2-54mm-PCB-Pin-cabeceras-de-caja-de-embalaje-para-Arduino.jpg_640x640.jpg" alt="Space" title="arduino" width="300" height="200">
+            </div>
+          </li>
+    </ul>
+
+
+
+
+  </div>
+
+
+ </section>
+
+   <!-- Materiales-->
+
+ <section id="Alcance">
+   <h3 class="text-center">Producto Final</h3>
+   <div class="row align-spaced">
+
+La automatización en los procesos industriales tiene como gran ventaja la reducción de los márgenes de error en la producción. Pensemos en la fabricación de piezas complejas que deben tener un aspecto exacto y uniforme y ser, además, lo suficientemente resistentes. Así, el avance de la tecnología ha sido directamente proporcional a la capacidad del ser humano para controlar las cadenas de montaje. En este sentido, una de las herramientas fundamentales es el CNC (Control Numérico), que permite efectuar programas de mecanizado.
+
+      Con el proyecto se busca reutilizar componentes electronicos, y con esto
+      aprender a construir una impresora sencilla que a futuro, con la misma metodologia, podremos
+      hacer impresoras 3d, cortadoras laser, entre otras maquinas CNC.
+
+     <div class="text">
+       <img  src="https://cdn-blog.bricogeek.com/img_cms/2522-cnc-cdrom.jpg" alt="Space" title="arduino" >
+     </div>
+    </div>
+ </section>
+
+
+
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
